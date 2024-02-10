@@ -11,7 +11,7 @@ import "io"
 import "bytes"
 
 import (
-	"github.com/tombrereton/go-hot-reload/internal/model"
+	"ghrw/internal/model"
 )
 
 func LandingPage(user model.User) templ.Component {

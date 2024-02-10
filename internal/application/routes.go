@@ -3,7 +3,7 @@ package application
 import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/tombrereton/go-hot-reload/internal/handler"
+	"ghrw/internal/handler"
 )
 
 func loadRoutes() *chi.Mux {

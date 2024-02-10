@@ -8,7 +8,7 @@ import (
 	"os/signal"
 
 	"github.com/joho/godotenv"
-	"github.com/tombrereton/go-hot-reload/internal/application"
+	"ghrw/internal/application"
 )
 
 func main() {

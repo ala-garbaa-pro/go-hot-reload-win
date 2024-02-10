@@ -1,4 +1,4 @@
-module github.com/tombrereton/go-hot-reload
+module ghrw
 
 go 1.21.5
 

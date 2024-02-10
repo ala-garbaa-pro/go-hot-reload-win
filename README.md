@@ -1,6 +1,6 @@
 # Go Hot Reload: A Go Web Application Template
 
-[![Go](https://github.com/tombrereton/go-hot-reload/actions/workflows/go.yml/badge.svg)](https://github.com/tombrereton/go-hot-reload/actions/workflows/go.yml)
+[![Go](https://ghrw/actions/workflows/go.yml/badge.svg)](https://ghrw/actions/workflows/go.yml)
 
 ## Introduction
 
