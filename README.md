@@ -1,16 +1,18 @@
-# Go Hot Reload: A Go Web Application Template
+# Go Hot Reload Windows: A Go Web Application Template for Windows users
 
-[![Go](https://github.com/tombrereton/go-hot-reload/actions/workflows/go.yml/badge.svg)](https://github.com/tombrereton/go-hot-reload/actions/workflows/go.yml)
+Note: This project was forked from https://github.com/tombrereton/go-hot-reload and upgraded configurations for specific Windows users:
+
+- Updated the project configurations to ensure compatibility with Windows environments. This includes creating the `.env` file as a reminder for Windows users, modifying the `.air.toml` file to use `.exe` extension for binaries, and adjusting the `package.json` script for templ to remove unnecessary quotation marks.
+- Additionally, upgraded the `templ` version to the latest release to ensure compatibility and take advantage of the latest features.
+  
+This commit addresses issues related to configuration and ensures smooth execution on Windows platforms.
+
+
+[![Go](https://github.com/ala-garbaa-pro/go-hot-reload-win/actions/workflows/go.yml/badge.svg)](https://github.com/ala-garbaa-pro/go-hot-reload-win/actions/workflows/go.yml)
 
 ## Introduction
 
-Go Hot Reload is an open-source starter template, designed to streamline the development process with hot reloading for Go, Templ (HTML), htmx and Tailwind CSS. It's a perfect starting point for server side web development, particularly for those using `htmx`.
-
-## Hosting
-
-I recommend hosting for free on https://fly.io/.
-
-The first 3 `shared-cpu-1x@256MB` VMs are free and you can deploy docker images easily.
+Go Hot Reload Windows is an open-source starter template, designed to streamline the development process with hot reloading for Go, Templ (HTML), htmx and Tailwind CSS. It's a perfect starting point for server side web development, particularly for those using `htmx`.
 
 ## Features
 
@@ -24,12 +26,12 @@ The first 3 `shared-cpu-1x@256MB` VMs are free and you can deploy docker images 
 
 ### Setting Up the Environment
 
-1. **Install npm Modules**: Run `npm install` to set up necessary modules.
+1. **Install npm Modules**: Run `pnpm install` to set up necessary modules.
 2. **Environment Configuration**: Create a `.env` file with the following content:
    ```
    PORT=4000
    ```
-3. **Launch the Development Server**: Start the server using `npm run dev`.
+3. **Launch the Development Server**: Start the server using `pnpm dev`.
 4. **Hot Reload**: Change the tailwind classes in `templates/landing.html` to see hot reload in action.
 
 ### For Windows Users
@@ -93,7 +95,7 @@ Full list of commands for `npm run` are:
 
 ```json
 "watch:tailwind": "npx tailwindcss -i ./web/static/css/input.css -o ./web/static/css/output.css --watch",
-"watch:templ": "templ generate -path web/view  --watch --proxy='http://localhost:4000'",
+"watch:templ": "templ generate -path web/view  --watch --proxy=http://localhost:4000",
 "watch:go": "air",
 "dev": "concurrently \"npm run watch:tailwind\" \"npm run watch:go\" \"npm run watch:templ\"",
 "test": "go test ./...",
@@ -102,7 +104,7 @@ Full list of commands for `npm run` are:
 "docker:it": "docker run -it --rm go-hot-reload sh"
 ```
 
-## Contributing to Go Hot Reload
+## Contributing to Go Hot Reload Windows
 
 Contributions from the community are welcome. Here are some guidelines to help you get started:
 
